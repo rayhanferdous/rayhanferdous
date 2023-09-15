@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "../Container";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -7,14 +8,21 @@ const Header = () => {
       <Container>
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
-            <img src="/assets/logo.png" alt="Logo" className="h-8" />
+            <Image
+              width={70}
+              height={32}
+              src="/assets/logo.png"
+              alt="Logo"
+              className="h-8"
+            />
           </div>
           <nav>
-            <ul className="flex items-center space-x-6">
-              <li className="text-gray-600 hover:text-gray-900">Home</li>
-              <li className="text-gray-600 hover:text-gray-900">Projects</li>
-              <li className="text-gray-600 hover:text-gray-900">Skills</li>
-              <li className="text-gray-600 hover:text-gray-900">Contact</li>
+            <ul className="flex items-center space-x-6 text-white">
+              <li className="cursor-pointer hover:text-white/90">Home</li>
+              <li className="cursor-pointer hover:text-white/90">Experiances</li>
+              <li className="cursor-pointer hover:text-white/90">Projects</li>
+              <li className="cursor-pointer hover:text-white/90">Skills</li>
+              <li className="cursor-pointer hover:text-white/90">Contact</li>
             </ul>
           </nav>
         </div>
