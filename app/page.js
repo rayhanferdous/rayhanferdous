@@ -1,3 +1,4 @@
+"use client";
 import Container from "@/components/Layout/Container";
 import GapContainer from "@/components/Layout/GapContainer";
 import Header from "@/components/Layout/Header";
@@ -6,10 +7,16 @@ import FeatureProject from "@/components/Layout/Index/FeatureProject";
 import Footer from "@/components/Layout/Index/Footer";
 import Hero from "@/components/Layout/Index/Hero";
 import ProjectShowcase from "@/components/Layout/Index/ProjectShowcase";
+import NavMenuCard from "@/components/Layout/NavMenuCard";
 import Rectangle from "@/components/Layout/Rectangle";
+import Drawer from "@/components/Utils/Drawer";
+import { featureProjectData } from "@/data/FeatureProjectData";
 import Head from "next/head";
+import { useState } from "react";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <Head>
@@ -22,11 +29,24 @@ export default function Home() {
         <div className="overflow-hidden">
           <Rectangle className={"-top-[10%] -left-[15%]"} />
           <Container>
-            <Header />
+            <Header setIsOpen={() => setIsOpen(true)} />
             <Hero />
             <GapContainer>
-              <FeatureProject />
-              <FeatureProject flipCard={"true"} />
+              <FeatureProject
+                title={featureProjectData[0].title}
+                description={featureProjectData[0].description}
+                image={featureProjectData[0].image}
+                technologies={featureProjectData[0].technologies}
+                live_preview={featureProjectData[0].live_preview}
+              />
+              <FeatureProject
+                flipCard={"true"}
+                title={featureProjectData[1].title}
+                description={featureProjectData[1].description}
+                image={featureProjectData[1].image}
+                technologies={featureProjectData[1].technologies}
+                live_preview={featureProjectData[1].live_preview}
+              />
               <ProjectShowcase />
               <Experiance />
               <Footer />
@@ -34,6 +54,9 @@ export default function Home() {
           </Container>
         </div>
       </div>
+      <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+        <NavMenuCard customStyle={""} />
+      </Drawer>
     </>
   );
 }
