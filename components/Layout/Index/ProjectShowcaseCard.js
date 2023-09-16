@@ -1,0 +1,54 @@
+import Link from "next/link";
+import React from "react";
+
+function ProjectShowcaseCard({
+  id,
+  title,
+  description,
+  image,
+  stack,
+  livepreview,
+  get_code,
+}) {
+  return (
+    <div className="h-full ">
+      <div className="relative">
+        <div className="max-sm:hidden absolute right-7 top-0 opacity-10 z-10 text-white font-bold text-[158px] leading-snug">
+          {id}
+        </div>
+        <div className="absolute -top-40 w-9/12 2xl:w-582 h-352 z-[10] rounded-20px overflow-hidden">
+          <img src={image} alt="rayhan_ferdous" />
+        </div>
+        <div className="mt-40 w-full 2xl:w-705 h-fit pb-8 xl:pb-0 xl-2xl:h-469 rounded-20px bg-[#112240]">
+          <div className="px-8 pb-8 pt-36">
+            <h3 className="mt-20 font-semibold text-lg text-projectsTitle">
+              {title}
+            </h3>
+            <p className="leading-7 text-secondery mt-2 mb-9">{description}</p>
+            <div className="flex items-center gap-10 flex-col md-lg:flex-row md-lg:justify-between">
+              <div className="flex gap-5">
+                {stack.map((item, index) => (
+                  <image src={item} alt="stack" key={index} />
+                ))}
+              </div>
+              <div className="flex items-center gap-4">
+                <Link href={get_code} target="_blank">
+                  <button className="w-[121px] h-[46px] rounded-5px font-medium text-white bg-btnSecondery">
+                    Get Code
+                  </button>
+                </Link>
+                <Link href={livepreview} target="_blank">
+                  <button className="w-[121px] h-[46px] rounded-5px font-medium text-white bg-btnPrimary">
+                    Live Preview
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default ProjectShowcaseCard;
