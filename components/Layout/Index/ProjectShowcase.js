@@ -16,8 +16,8 @@ function ProjectShowcase() {
           those websites.
         </p>
       </div>
-      <div className="grid gap-16 grid-cols-1 md:grid-cols-2 ">
-        {projectShowcaseData.slice({ length: 4 }).map((item, index) => (
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 ">
+        {projectShowcaseData.slice(0, 4).map((item, index) => (
           <ProjectShowcaseCard
             key={index}
             id={item.id}
