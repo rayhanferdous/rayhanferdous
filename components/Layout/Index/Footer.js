@@ -6,6 +6,7 @@ import TwitterSvg from "@/components/Svg/TwitterSvg";
 import React from "react";
 import Rectangle from "../Rectangle";
 import FiverrSvg from "@/components/Svg/FiverrSvg";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -39,10 +40,19 @@ function Footer() {
         <div className="flex gap-6 items-center">
           <p className="text-secondery text-lg">Follow Me:</p>
           <div className="flex gap-9 items-center bg-cardBg px-9 py-4 rounded-5px">
-            <GithubSvg />
-            <LinkedInSvg />
+            <Link href={"https://github.com/rayhanferdous"} target="_blank">
+              <GithubSvg />
+            </Link>
+            <Link
+              href={"https://bd.linkedin.com/in/therayhanferdous"}
+              target="_blank"
+            >
+              <LinkedInSvg />
+            </Link>
             <TwitterSvg />
-            <FiverrSvg />
+            <Link href={"https://www.fiverr.com/therayhan"} target="_blank">
+              <FiverrSvg />
+            </Link>
           </div>
         </div>
       </div>
