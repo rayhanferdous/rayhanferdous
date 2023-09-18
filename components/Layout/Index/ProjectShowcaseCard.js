@@ -13,13 +13,13 @@ function ProjectShowcaseCard({
   return (
     <div className="h-full ">
       <div className="relative">
-        <div className="max-sm:hidden absolute right-7 top-0 opacity-10 z-10 text-white font-bold text-[158px] leading-snug">
+        <div className="max-sm:hidden absolute right-3 sm:top-12 lg:top-5 opacity-10 z-10 text-white font-bold sm:text-8xl lg:text-[130px] leading-snug">
           {id}
         </div>
-        <div className="absolute -top-40 w-9/12 2xl:w-582 h-352 z-[10] rounded-20px overflow-hidden">
+        <div className="absolute -top-40 w-full sm:w-9/12 h-352 z-[10] rounded-20px overflow-hidden">
           <img src={image} alt="rayhan_ferdous" />
         </div>
-        <div className="mt-40 w-full 2xl:w-705 h-fit pb-8 xl:pb-0 xl-2xl:h-469 rounded-20px bg-[#112240]">
+        <div className="mt-40 w-full h-fit pb-8 xl:pb-0 xl-2xl:h-469 rounded-20px bg-[#112240]">
           <div className="px-8 pb-8 pt-36">
             <h3 className="mt-20 font-semibold text-lg text-projectsTitle">
               {title}
