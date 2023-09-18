@@ -5,6 +5,7 @@ const FiverrSvg = () => {
     <svg
       width="23"
       height="25"
+      className="cursor-pointer"
       viewBox="0 0 23 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
