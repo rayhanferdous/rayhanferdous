@@ -1,6 +1,8 @@
 import DocumentSvg from "@/components/Svg/DocumentSvg";
 import React from "react";
 import Rectangle from "../Rectangle";
+import { stakData } from "@/data/StackData";
+import Image from "next/image";
 
 function Hero() {
   return (
@@ -41,8 +43,8 @@ function Hero() {
         </div>
         <div className="relative z-10">
           <div className="w-546 grid grid-cols-6 gap-16">
-            {Array.from({ length: 24 }, (v, i) => (
-              <img src={`/assets/hero/stack/image ${i + 3}.png`} />
+            {stakData.map((item) => (
+              <Image src={item.img} alt={item.alt} key={item.id} />
             ))}
           </div>
           <div className="absolute w-full h-full top-0 left-0 z-[11] bg-gradient-to-t from-slate-900 from-15% via-slate-900 via-30% to-slate-900/0 to-90% "></div>
