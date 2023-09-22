@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -10,6 +11,7 @@ function ProjectShowcaseCard({
   livepreview,
   get_code,
 }) {
+  console.log(stack);
   return (
     <div className="h-full ">
       <div className="relative">
@@ -25,10 +27,16 @@ function ProjectShowcaseCard({
               {title}
             </h3>
             <p className="leading-7 text-secondery mt-2 mb-9">{description}</p>
-            <div className="flex items-center gap-10 flex-col md-lg:flex-row md-lg:justify-between">
+            <div className="flex items-center gap-10 max-md:flex-col md-lg:flex-row justify-between">
               <div className="flex gap-5">
                 {stack.map((item, index) => (
-                  <image src={item} alt="stack" key={index} />
+                  <Image
+                    width={29}
+                    height={29}
+                    src={item}
+                    alt="stack"
+                    key={index}
+                  />
                 ))}
               </div>
               <div className="flex items-center gap-4">
