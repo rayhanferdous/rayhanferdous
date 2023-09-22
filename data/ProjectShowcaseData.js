@@ -3,7 +3,7 @@ export const projectShowcaseData = [
     id: 1,
     title: "iHadis",
     description:
-      "Built the client-side for general & admin users using ReactJS, React Hook Form, React Router, Bootstrap & Material UI and deployed on Firebase. Used NodeJS and ExpressJS to create personalized API on the server-side.",
+      "IRD Foundation is providing Islamic apps for the benefit of Mankind, expecting rewards from Allah Subhanawa ta'ala alone and following the Madhab & Manhaz of Salaf-e-Salehin.",
     image: "/assets/projects/ihadis.com.png",
     stack: [
       "/assets/hero/stack/react.png",
@@ -19,7 +19,7 @@ export const projectShowcaseData = [
     id: 2,
     title: "QuranMazid",
     description:
-      "Built the client-side for general & admin users using ReactJS, React Hook Form, React Router, Bootstrap & Material UI and deployed on Firebase. Used NodeJS and ExpressJS to create personalized API on the server-side.",
+      "IRD Foundation is providing Islamic apps for the benefit of Mankind, expecting rewards from Allah Subhanawa ta'ala alone and following the Madhab & Manhaz of Salaf-e-Salehin.",
     image: "/assets/projects/quranmazid.com.png",
     stack: [
       "/assets/hero/stack/react.png",
