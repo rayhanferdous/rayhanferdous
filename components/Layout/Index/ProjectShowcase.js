@@ -35,7 +35,7 @@ function ProjectShowcase() {
           See More
         </button>
       </div>
-      <Rectangle className={"top-[25%] -right-[55%]"} />
+      <Rectangle className={"top-[25%] right-0 rounded-l-full"} />
     </div>
   );
 }
