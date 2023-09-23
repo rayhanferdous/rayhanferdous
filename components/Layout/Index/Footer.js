@@ -11,9 +11,9 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer className="relative">
-      <div className="flex justify-between lg:items-center gap-10 mb-[129px] flex-col lg:flex-row ">
+      <div className="flex justify-between lg:items-center gap-10 mb-10 md:mb-[129px] flex-col lg:flex-row ">
         <div className="flex flex-col">
-          <h2 className="font-bold text-56 text-projectsTitle mb-4">
+          <h2 className="font-bold text-4xl md:text-56 text-projectsTitle mb-4">
             Let’s Talk About Projects
           </h2>
           <p className="text-lg text-secondery">
@@ -26,7 +26,7 @@ function Footer() {
           <p>Get In Touch</p>
         </button>
       </div>
-      <div className="flex flex-wrap lg:items-center justify-between mb-20 gap-10 lg:flex-row ">
+      <div className="flex flex-wrap lg:items-center justify-between mb-20 gap-5 md:gap-10 lg:flex-row ">
         <div className="flex flex-col gap-1.5">
           <p className="text-secondery text-lg">Phone</p>
           <p className="font-medium text-2xl text-white">+8801 686 333 676</p>
