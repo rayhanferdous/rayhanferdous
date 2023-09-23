@@ -7,7 +7,7 @@ import HamBurger from "../Svg/HamBurger";
 function Header({ setIsOpen }) {
   return (
     <>
-      <header className="flex items-center justify-between mt-7 z-10">
+      <header className="flex items-center justify-between pt-7 z-10 sticky top-0">
         <Image
           src={"/assets/logo.png"}
           width={70}
