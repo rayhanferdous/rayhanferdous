@@ -3,7 +3,7 @@ import React from "react";
 function Rectangle({ className }) {
   return (
     <div
-      className={`${className} w-702 h-702 rounded-full bg-btnPrimary -z-[1] blur-240 absolute opacity-70`}
+      className={`${className} w-702 h-702 bg-btnPrimary blur-240 -z-[1] absolute opacity-70`}
     ></div>
   );
 }
