@@ -7,6 +7,7 @@ import Image from "next/image";
 function Hero() {
   return (
     <div className="flex items-center flex-col xl:flex-row xl:justify-between  relative">
+      <Rectangle className={"-top-[10%] -left-[15%] rounded-r-full"} />
       <div
         data-aos={"fade-right"}
         className="flex flex-col gap-16 max-sm:mt-16 sm:mt-40 justify-center items-center xl:justify-start xl:items-start"
@@ -62,7 +63,7 @@ function Hero() {
         src="/assets/hero/model.png"
         alt=""
       />
-      <Rectangle className={"-bottom-[15%] -right-[15%]"} />
+      <Rectangle className={"-bottom-[15%] right-0 rounded-l-full"} />
     </div>
   );
 }
