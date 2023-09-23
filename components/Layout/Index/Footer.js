@@ -56,7 +56,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <Rectangle className={"-top-[70%] -left-[45%]"} />
+      <Rectangle className={"-top-[70%] left-0 rounded-r-full"} />
     </footer>
   );
 }
