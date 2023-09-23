@@ -17,8 +17,8 @@ function FeatureProject({
       className={`${
         flipCard
           ? "lg:flex-row-reverse justify-end relative"
-          : "bg-cardBg justify-between"
-      } h-625 rounded-20px p-60px flex items-center max-md:flex-col gap-20 `}
+          : "justify-between"
+      } h-625 rounded-20px p-60px flex items-center max-md:flex-col gap-20 bg-cardBg `}
     >
       <div className="flex flex-col gap-16 w-full md+:w-590">
         <div className="flex flex-col gap-10">
