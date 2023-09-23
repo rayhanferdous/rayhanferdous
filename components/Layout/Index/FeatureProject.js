@@ -15,10 +15,8 @@ function FeatureProject({
     <div
       data-aos={flipCard ? "fade-right" : "fade-left"}
       className={`${
-        flipCard
-          ? "lg:flex-row-reverse justify-end relative"
-          : "justify-between"
-      } h-625 rounded-20px p-8 md:p-60px flex items-center max-md:flex-col gap-20 bg-cardBg `}
+        flipCard ? "lg:flex-row-reverse justify-end " : "justify-between"
+      } h-625 rounded-20px p-8 md:p-60px flex items-center max-md:flex-col gap-20 bg-cardBg relative overflow-hidden`}
     >
       <div className="flex flex-col gap-16 w-full md+:w-590">
         <div className="flex flex-col gap-10">
@@ -27,7 +25,9 @@ function FeatureProject({
               <p className="text-secondery text-2xl leading-6">
                 Featured Project
               </p>
-              <h2 className="font-bold text-4xl md:text-56 text-btnPrimary">{title}</h2>
+              <h2 className="font-bold text-4xl md:text-56 text-btnPrimary">
+                {title}
+              </h2>
             </div>
             <p className="text-base leading-7 text-secondery">{description}</p>
           </div>
