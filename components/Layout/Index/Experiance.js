@@ -8,7 +8,7 @@ function Experiance() {
       <div className="w-[1005px] flex flex-col gap-[68px]">
         <div className="text-center">
           <p className="text-secondery text-2xl mb-3.5">Experiance</p>
-          <h2 className="text-projectsTitle font-bold text-56">
+          <h2 className="text-projectsTitle font-bold text-4xl md:text-56">
             My Professional <br />
             Experiance
           </h2>
