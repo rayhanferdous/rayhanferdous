@@ -9,14 +9,14 @@ function Hero() {
     <div className="flex items-center flex-col xl:flex-row xl:justify-between  relative">
       <div
         data-aos={"fade-right"}
-        className="flex flex-col gap-16 mt-40 justify-center items-center xl:justify-start xl:items-start"
+        className="flex flex-col gap-16 max-sm:mt-16 sm:mt-40 justify-center items-center xl:justify-start xl:items-start"
       >
         <div className="flex flex-col gap-10 justify-center items-center xl:justify-start xl:items-start">
-          <div className="flex flex-col gap-10 justify-center items-center xl:justify-start xl:items-start">
+          <div className="flex flex-col gap-4 md:gap-10 justify-center items-center xl:justify-start xl:items-start">
             <div className="flex flex-col gap-6">
               <h3 className="font-bold text-4xl text-white">
-                <span className="font-medium text-4xl mb-4">Hello! ✋</span>{" "}
-                <br />I am Rayhan Ferdous
+                <p className="font-medium text-4xl mb-4">Hello! ✋</p>{" "}
+                <div>I am Rayhan Ferdous</div>
               </h3>
               <h2 className="font-bold text-56 text-btnPrimary">
                 {/* <ReactTyped
@@ -30,7 +30,7 @@ function Hero() {
                 /> */}
               </h2>
             </div>
-            <p className="text-lg text-secondery w-1/2 xl:w-full">
+            <p className="text-lg text-secondery w-8/12 xl:w-full">
               I work as a full stack (mostly backend) engineer, work on
               end-to-end of features and help other engineers to get things done
               FAST. Need consultation ?
