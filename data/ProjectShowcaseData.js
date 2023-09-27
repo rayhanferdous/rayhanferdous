@@ -2,8 +2,7 @@ export const projectShowcaseData = [
   {
     id: 1,
     title: "iHadis",
-    description:
-      "IRD Foundation is providing Islamic apps for the benefit of Mankind, expecting rewards from Allah Subhanawa ta'ala alone and following the Madhab & Manhaz of Salaf-e-Salehin.",
+    description: "z",
     image: "/assets/projects/ihadis.com.png",
     stack: [
       "/assets/hero/stack/react.png",
@@ -34,7 +33,7 @@ export const projectShowcaseData = [
     id: 3,
     title: "Lixzo",
     description:
-      "Built the client-side for general & admin users using ReactJS, React Hook Form, React Router, Bootstrap & Material UI and deployed on Firebase. Used NodeJS and ExpressJS to create personalized API on the server-side.",
+      "Lixzo.com is a Bangladeshi e-commerce platform that offers a variety of services to its customers. The company was founded by Mohammad Roni, who is also the Managing Director and Owner of Lixzo. Lixzo has grown significantly since its inception and has expanded its services to cater to the needs of its customers.",
     image: "/assets/projects/lixzo.com.png",
     stack: [
       "/assets/hero/stack/react.png",
@@ -64,7 +63,7 @@ export const projectShowcaseData = [
     id: 5,
     title: "Zenith",
     description:
-      "Built the client-side for general & admin users using ReactJS, React Hook Form, React Router, Bootstrap & Material UI and deployed on Firebase. Used NodeJS and ExpressJS to create personalized API on the server-side.",
+      "Your first perpetual derivaties platform using Virtual Market Maker (VMM) on Tezos by Payper Finance",
     image: "/assets/projects/zenith-seven.vercel.app.png",
     stack: [
       "/assets/hero/stack/react.png",
@@ -94,7 +93,7 @@ export const projectShowcaseData = [
     id: 7,
     title: "Knowleto",
     description:
-      "Built the client-side for general & admin users using ReactJS, React Hook Form, React Router, Bootstrap & Material UI and deployed on Firebase. Used NodeJS and ExpressJS to create personalized API on the server-side.",
+      "manage your content simply and easily. managing your contacts can be a breeze with simple and efficient methods. By utilizingcontact management tools or applications.",
     image: "/assets/projects/knowleto.vercel.app.png",
     stack: [
       "/assets/hero/stack/react.png",

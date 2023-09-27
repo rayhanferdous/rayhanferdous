@@ -13,27 +13,27 @@ function Footer() {
     <footer className="relative">
       <div className="flex justify-between lg:items-center gap-10 mb-10 md:mb-[129px] flex-col lg:flex-row ">
         <div className="flex flex-col">
-          <h2 className="font-bold text-4xl md:text-56 text-projectsTitle mb-4">
+          <h2 className="font-bold text-4xl md:text-4xl text-projectsTitle mb-4">
             Let’s Talk About Projects
           </h2>
           <p className="text-lg text-secondery">
-            Here is my some project. I am trying to somthing is better then
-            other websites and <br /> developers. Thats why I used modern
-            technology in those websites.
+            I am trying to somthing is better then other websites and
+            developers. <br />I believe on myself, I can make a valuable
+            contribution to your team.
           </p>
         </div>
-        <button className="bg-btnPrimary w-fit px-30 py-18 rounded-lg text-white text-lg leading-5 flex items-center gap-4">
+        <button className="bg-btnPrimary hover:bg-btnPrimary/80 w-fit px-4 py-2 rounded-lg text-white text-lg leading-5 flex items-center gap-4">
           <p>Get In Touch</p>
         </button>
       </div>
       <div className="flex flex-wrap lg:items-center justify-between mb-20 gap-5 md:gap-10 lg:flex-row ">
         <div className="flex flex-col gap-1.5">
           <p className="text-secondery text-lg">Phone</p>
-          <p className="font-medium text-2xl text-white">+8801 686 333 676</p>
+          <p className="font-medium text-xl text-white">+8801686333676</p>
         </div>
         <div className="flex flex-col gap-1.5">
           <p className="text-secondery text-lg">Email</p>
-          <p className="font-medium text-2xl text-white">
+          <p className="font-medium text-xl text-white">
             rayhanferdous8@gmail.com
           </p>
         </div>
