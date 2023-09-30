@@ -49,7 +49,7 @@ function Footer() {
             >
               <LinkedInSvg />
             </Link>
-            <TwitterSvg />
+            {/* <TwitterSvg /> */}
             <Link href={"https://www.fiverr.com/therayhan"} target="_blank">
               <FiverrSvg />
             </Link>
