@@ -7,7 +7,7 @@ function ProjectShowcase() {
   return (
     <div className="relative">
       <div className="mb-12">
-        <h2 className="text-projectsTitle font-bold text-[56px] mb-4">
+        <h2 className="text-projectsTitle font-bold text-4xl xl:text-[56px] mb-4">
           My Projects
         </h2>
         <p className="text-secondery text-lg">
@@ -17,7 +17,7 @@ function ProjectShowcase() {
         </p>
       </div>
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 ">
-        {projectShowcaseData.slice(0, 4).map((item, index) => (
+        {projectShowcaseData.map((item, index) => (
           <ProjectShowcaseCard
             key={index}
             id={item.id}
@@ -30,11 +30,11 @@ function ProjectShowcase() {
           />
         ))}
       </div>
-      <div className="flex items-center justify-center">
+      {/* <div className="flex items-center justify-center">
         <button className="w-[138px] py-3 mt-[58px] rounded-[7px] border-2 border-solid border-btnPrimary text-btnPrimary font-medium text-lg">
           See More
         </button>
-      </div>
+      </div> */}
       <Rectangle className={"top-[25%] right-0 rounded-l-full"} />
     </div>
   );
