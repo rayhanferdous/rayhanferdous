@@ -4,7 +4,7 @@ import { experianceData } from "@/data/ExperianceData";
 
 function Experiance() {
   return (
-    <div className="w-full flex items-center justify-center">
+    <div id="experience" className="w-full flex items-center justify-center">
       <div className="w-[1005px] flex flex-col gap-[68px]">
         <div className="text-center">
           <p className="text-secondery text-2xl mb-3.5">Experiance</p>
