@@ -2,7 +2,8 @@ export const projectShowcaseData = [
   {
     id: 1,
     title: "iHadis",
-    description: "z",
+    description:
+      "IRD Foundation is providing Islamic apps for the benefit of Mankind, expecting rewards from Allah Subhanawa ta'ala alone and following the Madhab & Manhaz of Salaf-e-Salehin.",
     image: "/assets/projects/ihadis.com.png",
     stack: [
       "/assets/hero/stack/react.png",
