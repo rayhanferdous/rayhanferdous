@@ -6,7 +6,10 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="flex items-center flex-col xl:flex-row xl:justify-between gap-6 relative">
+    <div
+      id="home"
+      className="flex items-center flex-col xl:flex-row xl:justify-between gap-6 relative"
+    >
       <Rectangle className={"-top-[10%] -left-[15%] rounded-r-full"} />
       <div
         data-aos={"fade-right"}
