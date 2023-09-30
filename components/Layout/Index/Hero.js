@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="flex items-center flex-col xl:flex-row xl:justify-between  relative">
+    <div className="flex items-center flex-col xl:flex-row xl:justify-between gap-6 relative">
       <Rectangle className={"-top-[10%] -left-[15%] rounded-r-full"} />
       <div
         data-aos={"fade-right"}
@@ -14,11 +14,13 @@ function Hero() {
       >
         <div className="flex flex-col gap-10 justify-center items-center xl:justify-start xl:items-start">
           <div className="flex flex-col gap-4 md:gap-10 justify-center items-center xl:justify-start xl:items-start">
-            <div className="flex flex-col gap-6">
-              <h3 className="font-bold text-4xl text-white">
-                <p className="font-medium text-4xl mb-4">Hello! ✋</p>{" "}
-                <div>I am Rayhan Ferdous</div>
-              </h3>
+            <div className="flex flex-col gap-6 max-sm:self-start">
+              <div className="font-bold text-2xl md:text-4xl text-white">
+                <h3 className="font-medium text-2xl md:text-4xl mb-4">
+                  Hello! ✋
+                </h3>
+                <h3>I am Rayhan Ferdous</h3>
+              </div>
               <h2 className="font-bold text-56 text-btnPrimary">
                 {/* <ReactTyped
                   loop
@@ -31,7 +33,7 @@ function Hero() {
                 /> */}
               </h2>
             </div>
-            <p className="text-lg text-secondery w-8/12 xl:w-full">
+            <p className="text-lg text-secondery md:w-8/12 xl:w-full">
               I work as a full stack (mostly backend) engineer, work on
               end-to-end of features and help other engineers to get things done
               FAST. Need consultation ?
@@ -42,17 +44,17 @@ function Hero() {
             <DocumentSvg />
           </button>
         </div>
-        <div className="w-546 grid grid-cols-6 gap-16">
-          {stakData.map((item) => (
-            <Image
-              width={40}
-              height={40}
-              src={item.img}
-              alt={item.alt}
-              key={item.id}
-            />
-          ))}
-        </div>
+        {/* <div className="w-546 grid grid-cols-3 xl:grid-cols-6 gap-16">
+            {stakData.map((item) => (
+              <Image
+                width={40}
+                height={40}
+                src={item.img}
+                alt={item.alt}
+                key={item.id}
+              />
+            ))}
+          </div> */}
       </div>
       <img
         data-aos={"fade-left"}
