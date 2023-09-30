@@ -37,7 +37,7 @@ function Footer() {
             rayhanferdous8@gmail.com
           </p>
         </div>
-        <div className="flex gap-6 items-center">
+        <div className="flex flex-wrap gap-6 items-center">
           <p className="text-secondery text-lg">Follow Me:</p>
           <div className="flex gap-9 items-center bg-cardBg px-9 py-4 rounded-5px">
             <Link href={"https://github.com/rayhanferdous"} target="_blank">
