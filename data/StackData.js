@@ -19,7 +19,7 @@ export const stakData = [
   { id: 18, img: "/assets/hero/stack/redux.png", alt: "redux" },
   { id: 19, img: "/assets/hero/stack/saduki.png", alt: "saduki" },
   { id: 20, img: "/assets/hero/stack/sern.png", alt: "sern" },
-  { id: 21, img: "/assets/hero/stack/snapseed.png", alt: "snapseed" },
+  { id: 21, img: "/assets/hero/stack/firebase.png", alt: "firebase" },
   { id: 22, img: "/assets/hero/stack/tailwind.png", alt: "tailwind" },
   { id: 23, img: "/assets/hero/stack/vue.png", alt: "vue" },
   { id: 24, img: "/assets/hero/stack/vscode.png", alt: "vscode" },
