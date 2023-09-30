@@ -5,7 +5,7 @@ import { projectShowcaseData } from "@/data/ProjectShowcaseData";
 
 function ProjectShowcase() {
   return (
-    <div className="relative">
+    <div id="projects" className="relative">
       <div className="mb-12">
         <h2 className="text-projectsTitle font-bold text-4xl xl:text-[56px] mb-4">
           My Projects
