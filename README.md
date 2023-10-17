@@ -3,7 +3,7 @@
 <br />
 <br />
 
-I am a Flutter Front End & Full Stack Web Enthusiast from Bangladesh <img width="21px" src="/assets/id-flag.png" style="margin-left:4px"/>
+I am Full Stack Web Enthusiast from Bangladesh <img width="21px" src="/assets/id-flag.png" style="margin-left:4px"/>
 
 - 📚 I’m currently learning FrontEnd Framework & Flutter
 - 📚 I'm currently learning BackEnd Language/Framework like PHP, Laravel.
