@@ -57,7 +57,7 @@ export const projectShowcaseData = [
       "/assets/hero/stack/tailwind.png",
       "/assets/hero/stack/html.png",
     ],
-    livepreview: "https://cleaners-world.web.app/",
+    livepreview: "https://coure-pi.vercel.app/",
     get_code: "",
   },
   {
