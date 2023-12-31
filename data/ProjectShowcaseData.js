@@ -30,8 +30,23 @@ export const projectShowcaseData = [
     livepreview: "https://quranmazid.com/",
     get_code: "",
   },
+
   {
     id: 3,
+    title: "RAFCART",
+    description:
+      "Best Collection For Home Decoration Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusantium perspiciatis, sapiente magni eos dolorum ex quos dolores odio",
+    image: "/assets/projects/ecommerce-by-rayhan.png",
+    stack: [
+      "/assets/hero/stack/react.png",
+      "/assets/hero/stack/tailwind.png",
+      "/assets/hero/stack/html.png",
+    ],
+    livepreview: "https://ecommerce-by-rayhan.vercel.app/",
+    get_code: "https://github.com/rayhanferdous/ecommerce-frontend-nextjs",
+  },
+  {
+    id: 4,
     title: "Lixzo",
     description:
       "Lixzo.com is a Bangladeshi e-commerce platform that offers a variety of services to its customers. The company was founded by Mohammad Roni, who is also the Managing Director and Owner of Lixzo. Lixzo has grown significantly since its inception and has expanded its services to cater to the needs of its customers.",
@@ -46,7 +61,7 @@ export const projectShowcaseData = [
     get_code: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "Animation Project",
     description:
       "This is a simple animation project. I have used NextJs, Tailwind CSS to create this project. I have used the FramerMotion to create this project.",
@@ -60,7 +75,7 @@ export const projectShowcaseData = [
     get_code: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "Cuore Tours",
     description:
       "Buy your Panoramic Bus tickets and explore the city. The best one-day guided tours to dive into the history of Rome with Colosseum and Vatican, Pompeii, Capri and more.",
@@ -75,7 +90,7 @@ export const projectShowcaseData = [
     get_code: "",
   },
   {
-    id: 6,
+    id: 7,
     title: "Zenith",
     description:
       "Your first perpetual derivaties platform using Virtual Market Maker (VMM) on Tezos by Payper Finance",
@@ -90,7 +105,7 @@ export const projectShowcaseData = [
     get_code: "",
   },
   {
-    id: 7,
+    id: 8,
     title: "Thaw UI",
     description:
       "Built the client-side for general & admin users using ReactJS, React Hook Form, React Router, Bootstrap & Material UI and deployed on Firebase. Used NodeJS and ExpressJS to create personalized API on the server-side.",
@@ -105,7 +120,7 @@ export const projectShowcaseData = [
     get_code: "",
   },
   {
-    id: 8,
+    id: 9,
     title: "Knowleto",
     description:
       "manage your content simply and easily. managing your contacts can be a breeze with simple and efficient methods. By utilizingcontact management tools or applications.",
