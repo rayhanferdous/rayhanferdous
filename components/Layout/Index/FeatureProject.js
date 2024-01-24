@@ -2,6 +2,7 @@ import React from "react";
 import Rectangle from "../Rectangle";
 import TechnologyCard from "./TechnologyCard";
 import Link from "next/link";
+import Image from "next/image";
 
 function FeatureProject({
   flipCard,
@@ -48,7 +49,9 @@ function FeatureProject({
           </button>
         </Link>
       </div>
-      <img
+      <Image
+        width={514}
+        height={530}
         src={image}
         alt="rayhan_ferdous"
         className="rounded-20px h-530px object-cover object-top w-514px bg-cardBgSecondery"
