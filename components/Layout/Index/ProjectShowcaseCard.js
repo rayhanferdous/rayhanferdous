@@ -18,7 +18,13 @@ function ProjectShowcaseCard({
           {id}
         </div>
         <div className="absolute -top-40 w-full sm:w-9/12 h-352 z-[10] rounded-20px overflow-hidden">
-          <img src={image} alt="rayhan_ferdous" />
+          <Image
+            width={1000}
+            height={1000}
+            className="w-full h-full"
+            src={image}
+            alt="rayhan_ferdous"
+          />
         </div>
         <div className="mt-40 w-full h-fit pb-8 xl:pb-0 xl-2xl:h-469 rounded-20px bg-[#112240]">
           <div className="px-4 md:px-8 pb-8 pt-36">
