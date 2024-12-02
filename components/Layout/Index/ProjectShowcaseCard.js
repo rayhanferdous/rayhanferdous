@@ -8,8 +8,8 @@ function ProjectShowcaseCard({
   description,
   image,
   stack,
-  livepreview,
-  get_code,
+  livepreview = "/#",
+  get_code = "/#",
 }) {
   return (
     <div className="h-full ">
@@ -34,7 +34,7 @@ function ProjectShowcaseCard({
             <p className="leading-7 text-secondery mt-2 mb-9">{description}</p>
             <div className="flex items-center gap-10 max-md:flex-col md-lg:flex-row justify-between">
               <div className="flex gap-5">
-                {stack.map((item, index) => (
+                {stack?.map((item, index) => (
                   <Image
                     width={29}
                     height={29}
