@@ -12,7 +12,7 @@ function ProjectShowcaseCard({
   get_code = "/#",
 }) {
   return (
-    <div className="h-full ">
+    <div className="h-full">
       <div className="relative">
         <div className="max-sm:hidden absolute right-3 sm:top-12 lg:top-5 opacity-10 z-10 text-white font-bold sm:text-8xl lg:text-[130px] leading-snug">
           {id}
@@ -21,7 +21,7 @@ function ProjectShowcaseCard({
           <Image
             width={1000}
             height={1000}
-            className="w-full h-full"
+            className="w-full h-auto"
             src={image}
             alt="rayhan_ferdous"
           />

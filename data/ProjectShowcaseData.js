@@ -44,7 +44,7 @@ export const projectShowcaseData = [
   {
     id: 4,
     title: "MatchMyTees",
-    image: "/assets/projects/ecommerce-by-rayhan.png",
+    image: "/assets/projects/matchmytees-by-rayhan.png",
     description:
       "Match your trendsetting sneakers with our extensive database featuring millions of products from renowned brands like Adidas, ASICS, Converse, Gucci, Jordan, Louis Vuitton, New Balance, Nike, Puma, Reebok, Saucon, Vans, and more. We seamlessly match your sneakers to an array of outfits, including T-shirts, hoodies, crop tops, and socks. ",
     technologies: ["Next.Js", "Laravel", "Redux", "Tailwind CSS", "More"],
