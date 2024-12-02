@@ -19,7 +19,7 @@ function FeatureProject({
   useGSAP(() => {
     gsap.to(flipCard ? ".featureProjectTextTop" : ".featureProjectTextBottom", {
       x: 0,
-      duration: 0.5,
+      duration: 1.5,
       opacity: 1,
       ease: "power1.out",
       scrollTrigger: {
@@ -29,14 +29,14 @@ function FeatureProject({
         start: "top 100%",
         end: "top 50%",
         scrub: true,
-        markers: true,
+        markers: false,
       },
     });
     gsap.to(
       flipCard ? ".featureProjectImageTop" : ".featureProjectImageBottom",
       {
         x: 0,
-        duration: 0.5,
+        duration: 1.5,
         opacity: 1,
         ease: "power1.out",
         scrollTrigger: {
@@ -46,7 +46,7 @@ function FeatureProject({
           start: "top 100%",
           end: "top 50%",
           scrub: true,
-          markers: true,
+          markers: false,
         },
       }
     );

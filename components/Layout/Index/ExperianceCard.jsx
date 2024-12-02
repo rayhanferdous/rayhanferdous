@@ -1,9 +1,11 @@
 import BulletPoint from "@/components/Utils/BulletPoint";
 import React from "react";
 
-const ExperianceCard = ({ position, company, duration, details }) => {
+const ExperianceCard = ({ id, position, company, duration, details }) => {
   return (
-    <div className="p-5 border border-solid flex flex-col gap-5 border-primary-border rounded-[10px]">
+    <div
+      className={`experianceItem-${id} p-5 border border-solid flex flex-col gap-5 border-primary-border rounded-[10px]`}
+    >
       <div>
         <div className="flex gap-4">
           <BulletPoint />
