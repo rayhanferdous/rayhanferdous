@@ -1,8 +1,12 @@
-import React from "react";
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
+import Image from "next/image";
+import Link from "next/link";
 import Rectangle from "../Rectangle";
 import TechnologyCard from "./TechnologyCard";
-import Link from "next/link";
-import Image from "next/image";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function FeatureProject({
   flipCard,
@@ -12,14 +16,54 @@ function FeatureProject({
   technologies,
   live_preview,
 }) {
+  useGSAP(() => {
+    gsap.to(flipCard ? ".featureProjectTextTop" : ".featureProjectTextBottom", {
+      x: 0,
+      duration: 0.5,
+      opacity: 1,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: flipCard
+          ? ".featureProjectTextTop"
+          : ".featureProjectTextBottom",
+        start: "top 100%",
+        end: "top 50%",
+        scrub: true,
+        markers: true,
+      },
+    });
+    gsap.to(
+      flipCard ? ".featureProjectImageTop" : ".featureProjectImageBottom",
+      {
+        x: 0,
+        duration: 0.5,
+        opacity: 1,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: flipCard
+            ? ".featureProjectImageTop"
+            : ".featureProjectImageBottom",
+          start: "top 100%",
+          end: "top 50%",
+          scrub: true,
+          markers: true,
+        },
+      }
+    );
+  }, []);
   return (
     <div
-      data-aos={flipCard ? "fade-right" : "fade-left"}
       className={`${
         flipCard ? "lg:flex-row-reverse justify-end " : "justify-between"
       } h-625 rounded-20px p-8 md:p-60px flex items-center max-md:flex-col gap-20 bg-cardBg relative overflow-hidden`}
     >
-      <div className="flex flex-col gap-16 w-full md+:w-590">
+      <div
+        className={`flex flex-col gap-16 w-full md:w-590 ${
+          flipCard
+            ? "translate-x-[800px] featureProjectTextTop"
+            : "-translate-x-[800px] featureProjectTextBottom"
+        }`}
+      >
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-4">
@@ -54,7 +98,11 @@ function FeatureProject({
         height={530}
         src={image}
         alt="rayhan_ferdous"
-        className="rounded-20px h-530px object-cover object-top w-514px bg-cardBgSecondery"
+        className={`${
+          flipCard
+            ? "-translate-x-[600px] featureProjectImageTop"
+            : "translate-x-[400px] featureProjectImageBottom"
+        } rounded-20px h-530px object-cover object-top w-514px bg-cardBgSecondery`}
       />
       <Rectangle className={"-top-[10%] -left-[70%]"} />
     </div>

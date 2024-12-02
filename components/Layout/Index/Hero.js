@@ -1,20 +1,25 @@
 import DocumentSvg from "@/components/Svg/DocumentSvg";
-import React from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Rectangle from "../Rectangle";
-import { stakData } from "@/data/StackData";
-import Image from "next/image";
 
 function Hero() {
+  useGSAP(() => {
+    gsap.from("#home", {
+      y: 200,
+      duration: 1.5,
+      opacity: 0,
+      duration: 1,
+      ease: "power1.out",
+    });
+  }, []);
   return (
     <div
       id="home"
       className="flex items-center flex-col xl:flex-row xl:justify-between gap-6 relative"
     >
       <Rectangle className={"-top-[10%] -left-[15%] rounded-r-full"} />
-      <div
-        data-aos={"fade-right"}
-        className="flex flex-col gap-16 max-sm:mt-16 sm:mt-40 justify-center items-center xl:justify-start xl:items-start"
-      >
+      <div className="flex flex-col gap-16 max-sm:mt-16 sm:mt-40 justify-center items-center xl:justify-start xl:items-start">
         <div className="flex flex-col gap-10 justify-center items-center xl:justify-start xl:items-start">
           <div className="flex flex-col gap-4 md:gap-10 justify-center items-center xl:justify-start xl:items-start">
             <div className="flex flex-col gap-6 max-sm:self-start">

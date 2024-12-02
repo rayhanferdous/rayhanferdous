@@ -16,7 +16,7 @@ function Header({ setIsOpen }) {
     });
   }, []);
   return (
-    <div className="backdrop-blur-sm bg-primary/80 z-20 sticky top-0 py-2">
+    <div className="backdrop-blur-sm overflow-x-hidden bg-primary/80 z-20 sticky top-0 py-2">
       <Container>
         <header className="flex items-center justify-between">
           <Image

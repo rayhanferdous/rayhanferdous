@@ -67,7 +67,7 @@ function NavMenuCard({ customStyle }) {
       </div>
       <button
         id="hire-me"
-        className="translate-x-40 bg-btnPrimary px-4 py-2 hover:bg-btnPrimary/80 rounded-5px text-white text-lg leading-5"
+        className="translate-x-[1000px] bg-btnPrimary px-4 py-2 hover:bg-btnPrimary/80 rounded-5px text-white text-lg leading-5"
       >
         {".Hire Me{}"}
       </button>
