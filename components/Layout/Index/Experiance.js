@@ -43,7 +43,7 @@ function Experiance() {
             start: "top 90%",
             end: "bottom 100%",
             scrub: true,
-            markers: true,
+            markers: false,
           },
         }
       );
