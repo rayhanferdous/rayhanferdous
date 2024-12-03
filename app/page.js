@@ -42,7 +42,7 @@ export default function Home() {
             technologies={featureProjectData[1].technologies}
             live_preview={featureProjectData[1].live_preview}
           />
-          <ProjectShowcase />
+          {/* <ProjectShowcase /> */}
           <Experiance />
           <Footer />
         </GapContainer>
