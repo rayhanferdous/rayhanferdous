@@ -35,7 +35,7 @@ function ProjectShowcase() {
         `.projectItem-${index}`,
         {
           opacity: 0,
-          x: index % 2 === 0 ? -300 : 300,
+          x: index % 2 === 0 ? -1000 : 1000,
         },
         {
           opacity: 1,
