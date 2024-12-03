@@ -45,10 +45,10 @@ function NavMenuCard({ customStyle }) {
         ))}
       </div>
       <button
-        id="hire-me"
+        id="contact-btn"
         className="bg-btnPrimary px-4 py-2 hover:bg-btnPrimary/80 rounded-5px text-white text-lg leading-5"
       >
-        {".Hire Me{}"}
+        {".Contact{}"}
       </button>
     </div>
   );

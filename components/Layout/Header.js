@@ -15,19 +15,18 @@ function Header({ setIsOpen }) {
       y: -44,
       duration: 1,
       ease: "circ.out",
-    });
-    tl.from(".header-nav-items", {
-      y: 80,
-      duration: 1,
-      ease: "power1.out",
-      stagger: 0.2,
-    });
-
-    tl.from("#hire-me", {
-      x: 1000,
-      duration: 1,
-      ease: "expo.inOut",
-    });
+    })
+      .from(".header-nav-items", {
+        y: 80,
+        duration: 1,
+        ease: "power1.out",
+        stagger: 0.2,
+      })
+      .from("#contact-btn", {
+        x: "50vw",
+        duration: 2,
+        ease: "elastic.inOut",
+      });
   }, []);
   return (
     <div className="backdrop-blur-sm overflow-x-hidden bg-primary/80 z-20 sticky top-0 py-2">
