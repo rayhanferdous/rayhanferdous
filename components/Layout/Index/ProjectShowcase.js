@@ -40,14 +40,14 @@ function ProjectShowcase() {
         {
           opacity: 1,
           x: 0,
-          duration: 4,
+          duration: 2,
           ease: "power1.out",
           stagger: 0.5,
           scrollTrigger: {
             trigger: `.projectItem-${index}`,
             scroll: "body",
             start: "top 80%",
-            end: "top 50%",
+            end: "top 40%",
             scrub: true,
             markers: false,
           },
@@ -57,7 +57,7 @@ function ProjectShowcase() {
   }, []);
 
   return (
-    <div id="projects" className="relative">
+    <div id="projects" className="relative overflow-hidden">
       <div className="mb-12 project-showcase-title">
         <h2 className="text-projectsTitle font-bold text-4xl xl:text-[56px] mb-4">
           My Projects
