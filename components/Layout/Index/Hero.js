@@ -47,7 +47,7 @@ function Hero() {
   };
 
   return (
-    <>
+    <div>
       <div
         id="home"
         className="flex items-center flex-col xl:flex-row xl:justify-between gap-6 relative"
@@ -119,7 +119,7 @@ function Hero() {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
