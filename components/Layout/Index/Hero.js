@@ -79,7 +79,7 @@ function Hero() {
         />
         <Rectangle className={"-bottom-[15%] right-0 rounded-l-full"} />
       </div>
-      <Marquee pauseOnHover className="my-10">
+      {/* <Marquee pauseOnHover className="my-10">
         {stakData.map((item) => (
           <Image
             width={40}
@@ -90,7 +90,7 @@ function Hero() {
             key={item.id}
           />
         ))}
-      </Marquee>
+      </Marquee> */}
     </div>
   );
 }
