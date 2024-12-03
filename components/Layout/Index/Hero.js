@@ -107,7 +107,7 @@ function Hero() {
       </div>
       <div
         id="stack"
-        className="w-full overflow-hidden my-10 flex flex-shrink-1 items-center gap-16"
+        className="w-full my-10 flex flex-shrink-1 items-center gap-16"
       >
         {stakData.map((item) => (
           <Image
