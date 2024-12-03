@@ -86,7 +86,7 @@ function Hero() {
                   end-to-end features and help other engineers get things done
                   FAST. Need consultation?
                 </p>
-                <div className="w-fit mt-5 flex items-center justify-between gap-8">
+                <div className="w-fit mt-5 flex flex-wrap items-center justify-between gap-8">
                   <FollowMe />{" "}
                   <button className="bg-btnPrimary w-fit px-30 py-18 rounded-lg text-white text-lg leading-5 flex items-center gap-4">
                     <p>Get Resume</p>
@@ -107,7 +107,7 @@ function Hero() {
       </div>
       <div
         id="stack"
-        className="w-full mt-10 flex flex-shrink-1 items-center gap-16"
+        className="w-full overflow-hidden my-10 flex flex-shrink-1 items-center gap-16"
       >
         {stakData.map((item) => (
           <Image
