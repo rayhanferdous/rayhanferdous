@@ -1,22 +1,6 @@
 export const projectShowcaseData = [
   {
     id: 1,
-    title: "iHadis",
-    description:
-      "IRD Foundation is providing Islamic apps for the benefit of Mankind, expecting rewards from Allah Subhanawa ta'ala alone and following the Madhab & Manhaz of Salaf-e-Salehin.",
-    image: "/assets/projects/ihadis.com.png",
-    stack: [
-      "/assets/hero/stack/react.png",
-      "/assets/hero/stack/redux.png",
-      "/assets/hero/stack/tailwind.png",
-      "/assets/hero/stack/html.png",
-    ],
-    livepreview: "https://ihadis.com/",
-    get_code: "",
-  },
-
-  {
-    id: 2,
     title: "QuranMazid",
     description:
       "IRD Foundation is providing Islamic apps for the benefit of Mankind, expecting rewards from Allah Subhanawa ta'ala alone and following the Madhab & Manhaz of Salaf-e-Salehin.",
@@ -28,6 +12,22 @@ export const projectShowcaseData = [
       "/assets/hero/stack/html.png",
     ],
     livepreview: "https://quranmazid.com/",
+    get_code: "",
+  },
+
+  {
+    id: 2,
+    title: "iHadis",
+    description:
+      "IRD Foundation is providing Islamic apps for the benefit of Mankind, expecting rewards from Allah Subhanawa ta'ala alone and following the Madhab & Manhaz of Salaf-e-Salehin.",
+    image: "/assets/projects/ihadis.com.png",
+    stack: [
+      "/assets/hero/stack/react.png",
+      "/assets/hero/stack/redux.png",
+      "/assets/hero/stack/tailwind.png",
+      "/assets/hero/stack/html.png",
+    ],
+    livepreview: "https://ihadis.com/",
     get_code: "",
   },
 

@@ -8,6 +8,7 @@ import { stakData } from "@/data/StackData";
 import Image from "next/image";
 import { useEffect } from "react";
 import Marquee from "react-fast-marquee";
+import Link from "next/link";
 
 function Hero() {
   const tl = gsap.timeline({ paused: false });
@@ -62,10 +63,16 @@ function Hero() {
                 </p>
                 <div className="w-fit mt-5 flex flex-wrap items-center justify-between gap-8">
                   <FollowMe />{" "}
-                  <button className="bg-btnPrimary w-fit px-30 py-18 rounded-lg text-white text-lg leading-5 flex items-center gap-4">
+                  <Link
+                    href={
+                      "https://drive.google.com/file/d/17_ZfYSGXfU0L5fQqFRunzxTLzuFwItqz/view?usp=drivesdk"
+                    }
+                    target="_blank"
+                    className="bg-btnPrimary w-fit px-30 py-18 rounded-lg text-white text-lg leading-5 flex items-center gap-4"
+                  >
                     <p>Get Resume</p>
                     <DocumentSvg />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

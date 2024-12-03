@@ -35,19 +35,19 @@ function ProjectShowcase() {
         `.projectItem-${index}`,
         {
           opacity: 0,
-          x: index % 2 === 0 ? -1000 : 1000,
+          x: index % 2 === 0 ? -500 : 500,
         },
         {
           opacity: 1,
           x: 0,
-          duration: 1,
+          duration: 4,
           ease: "power1.out",
           stagger: 0.5,
           scrollTrigger: {
             trigger: `.projectItem-${index}`,
             scroll: "body",
             start: "top 80%",
-            end: "bottom 60%",
+            end: "top 50%",
             scrub: true,
             markers: false,
           },
