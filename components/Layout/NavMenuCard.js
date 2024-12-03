@@ -1,31 +1,10 @@
 "use client";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 
 function NavMenuCard({ customStyle }) {
   const searchParams = useSearchParams();
   const router = useRouter();
-
-  // Animation for the nav items
-  useGSAP(() => {
-    gsap.to(".header-nav-items", {
-      y: 0,
-      duration: 1.5,
-      opacity: 1,
-      duration: 1,
-      ease: "power1.out",
-      stagger: 0.2,
-    });
-    gsap.to("#hire-me", {
-      x: 0,
-      duration: 4,
-      opacity: 1,
-      duration: 1,
-      ease: "expo.inOut",
-    });
-  }, []); // Only run once on mount
 
   // Define navigation links
   const NavLinks = [
@@ -59,7 +38,7 @@ function NavMenuCard({ customStyle }) {
             onClick={() => router.push(`/?section=${item.uniqueId}`)}
             className={`${
               item.name === "{Home}" ? "text-btnPrimary" : "text-secondery"
-            } header-nav-items translate-y-20 flex items-center text-lg leading-5 cursor-pointer`}
+            } header-nav-items flex items-center text-lg leading-5 cursor-pointer`}
           >
             {item.name}
           </div>
@@ -67,7 +46,7 @@ function NavMenuCard({ customStyle }) {
       </div>
       <button
         id="hire-me"
-        className="translate-x-[1000px] bg-btnPrimary px-4 py-2 hover:bg-btnPrimary/80 rounded-5px text-white text-lg leading-5"
+        className="bg-btnPrimary px-4 py-2 hover:bg-btnPrimary/80 rounded-5px text-white text-lg leading-5"
       >
         {".Hire Me{}"}
       </button>

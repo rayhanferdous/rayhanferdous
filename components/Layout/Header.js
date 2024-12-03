@@ -9,10 +9,24 @@ import { useGSAP } from "@gsap/react";
 
 function Header({ setIsOpen }) {
   useGSAP(() => {
-    gsap.to("#header_logo", {
-      y: 0,
-      duration: 1.5,
+    const tl = gsap.timeline();
+
+    tl.from("#header_logo", {
+      y: -44,
+      duration: 1,
       ease: "circ.out",
+    });
+    tl.from(".header-nav-items", {
+      y: 80,
+      duration: 1,
+      ease: "power1.out",
+      stagger: 0.2,
+    });
+
+    tl.from("#hire-me", {
+      x: 1000,
+      duration: 1,
+      ease: "expo.inOut",
     });
   }, []);
   return (
@@ -24,7 +38,6 @@ function Header({ setIsOpen }) {
             src={"/assets/logo.png"}
             width={65}
             height={36}
-            className="-translate-y-11"
             alt="rayhan-ferdous"
           />
           <NavMenuCard customStyle={"max-lg:hidden"} />

@@ -35,16 +35,17 @@ function ProjectShowcase() {
         `.projectItem-${index}`,
         {
           opacity: 0,
-          y: 30,
+          x: index % 2 === 0 ? -300 : 300,
         },
         {
           opacity: 1,
-          y: 0,
+          x: 0,
           duration: 1,
           ease: "power1.out",
           stagger: 0.5,
           scrollTrigger: {
             trigger: `.projectItem-${index}`,
+            scroll: "body",
             start: "top 80%",
             end: "bottom 60%",
             scrub: true,
