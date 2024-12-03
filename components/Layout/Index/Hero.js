@@ -7,6 +7,7 @@ import FollowMe from "./FollowMe";
 import { stakData } from "@/data/StackData";
 import Image from "next/image";
 import { useEffect } from "react";
+import Marquee from "react-fast-marquee";
 
 function Hero() {
   const tl = gsap.timeline({ paused: false });
@@ -16,35 +17,8 @@ function Hero() {
       opacity: 0,
       duration: 1.5,
       ease: "power1.out",
-    }).to("#stack", {
-      x: "-100%",
-      duration: 5,
-      repeat: -1,
-      ease: "none",
     });
   }, []);
-
-  useEffect(() => {
-    const stack = document.getElementById("stack");
-
-    if (stack) {
-      stack.addEventListener("mouseover", handleMouseOver);
-      stack.addEventListener("mouseleave", handleMouseLeave);
-
-      return () => {
-        stack.removeEventListener("mouseover", handleMouseOver);
-        stack.removeEventListener("mouseleave", handleMouseLeave);
-      };
-    }
-  }, []);
-
-  const handleMouseOver = () => {
-    tl.pause();
-  };
-
-  const handleMouseLeave = () => {
-    tl.play();
-  };
 
   return (
     <div>
@@ -55,7 +29,7 @@ function Hero() {
         <Rectangle className={"-top-[10%] -left-[15%] rounded-r-full"} />
         <div className="flex flex-col gap-16 max-sm:mt-16 sm:mt-40 justify-center items-center xl:justify-start xl:items-start">
           <div className="flex flex-col gap-10 justify-center items-center xl:justify-start xl:items-start">
-            <div className="flex flex-col gap-4 md:gap-10 justify-center items-center xl:justify-start xl:items-start">
+            <div className="flex flex-col gap-4 md:gap-10">
               <div className="flex flex-col gap-6 max-sm:self-start">
                 <div className="font-bold text-2xl md:text-4xl text-white">
                   <h3 className="font-medium text-2xl md:text-4xl mb-4">
@@ -63,23 +37,23 @@ function Hero() {
                   </h3>
                   <h3>I am Rayhan Ferdous</h3>
                 </div>
-                <h2 className="font-bold text-56 text-btnPrimary">
-                  <ReactTyped
-                    loop
-                    strings={[
-                      "Full Stack Developer",
-                      "PHP Developer",
-                      "Laravel Developer",
-                      "React.Js Developer",
-                      "Next.Js Developer",
-                      "VueJs Developer",
-                      "NuxtJs Developer",
-                    ]}
-                    typeSpeed={40}
-                    backSpeed={50}
-                  />
-                </h2>
               </div>
+              <h2 className="font-bold text-3xl sm:text-4xl md:text-56 text-btnPrimary">
+                <ReactTyped
+                  loop
+                  strings={[
+                    "Full Stack Developer",
+                    "PHP Developer",
+                    "Laravel Developer",
+                    "React.Js Developer",
+                    "Next.Js Developer",
+                    "VueJs Developer",
+                    "NuxtJs Developer",
+                  ]}
+                  typeSpeed={40}
+                  backSpeed={50}
+                />
+              </h2>
               <div>
                 <p className="text-lg text-secondery md:w-8/12 xl:w-full">
                   I work as a full stack (mostly backend) engineer, work on
@@ -105,20 +79,18 @@ function Hero() {
         />
         <Rectangle className={"-bottom-[15%] right-0 rounded-l-full"} />
       </div>
-      <div
-        id="stack"
-        className="w-full my-10 flex flex-shrink-1 items-center gap-16"
-      >
+      <Marquee pauseOnHover className="my-10">
         {stakData.map((item) => (
           <Image
             width={40}
             height={40}
+            className="mx-8"
             src={item.img}
             alt={item.alt}
             key={item.id}
           />
         ))}
-      </div>
+      </Marquee>
     </div>
   );
 }
