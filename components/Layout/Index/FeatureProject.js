@@ -26,8 +26,8 @@ function FeatureProject({
         trigger: flipCard
           ? ".featureProjectTextTop"
           : ".featureProjectTextBottom",
-        start: "top 100%",
-        end: "top 50%",
+        start: "top 70%",
+        end: "top 40%",
         scrub: true,
         markers: false,
       },
@@ -43,8 +43,8 @@ function FeatureProject({
           trigger: flipCard
             ? ".featureProjectImageTop"
             : ".featureProjectImageBottom",
-          start: "top 100%",
-          end: "top 50%",
+          start: "top 70%",
+          end: "top 40%",
           scrub: true,
           markers: false,
         },
