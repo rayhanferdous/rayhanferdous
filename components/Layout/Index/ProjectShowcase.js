@@ -23,8 +23,8 @@ function ProjectShowcase() {
         ease: "power1.out",
         scrollTrigger: {
           trigger: `.project-showcase-title`,
-          start: "top 80%",
-          end: "bottom 60%",
+          start: "top 60%",
+          end: "top 40%",
           scrub: true,
           markers: false,
         },
