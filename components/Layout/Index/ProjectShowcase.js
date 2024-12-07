@@ -46,10 +46,10 @@ function ProjectShowcase() {
           scrollTrigger: {
             trigger: `.projectItem-${index}`,
             scroll: "body",
-            start: "top 70%",
-            end: "top 50%",
+            start: "top 80%",
+            end: "top 40%",
             scrub: true,
-            markers: false,
+            markers: true,
           },
         }
       );
