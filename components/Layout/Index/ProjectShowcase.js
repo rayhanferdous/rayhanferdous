@@ -24,9 +24,9 @@ function ProjectShowcase() {
         scrollTrigger: {
           trigger: `.project-showcase-title`,
           start: "top 60%",
-          end: "top 40%",
+          end: "bottom 40%",
           scrub: true,
-          markers: false,
+          markers: true,
         },
       }
     );
